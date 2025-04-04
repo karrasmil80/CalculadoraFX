@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="LabelWelcome" alignment="CENTER" prefHeight="144.0" prefWidth="270.0" spacing="20.0" style="-fx-background-color: &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;?import javafx.scene.control.Button?&gt;&lt;Button fx:id=&quot;button8&quot; alignment=&quot;TOP_CENTER&quot; onAction=&quot;#clickButton8&quot; prefHeight=&quot;26.0&quot; prefWidth=&quot;60.0&quot; style=&quot;-fx-background-color: grey;&quot; text=&quot;8&quot; xmlns=&quot;http://javafx.com/javafx/23.0.1&quot; xmlns:fx=&quot;http://javafx.com/fxml/1&quot; /&gt;;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.calculadorafx.controller.CalculadoraController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="0.0" prefWidth="230.0" />
+   <Label fx:id="welcomeText" />
+   <HBox prefHeight="2.0" prefWidth="230.0" />
+   <TextField fx:id="input" prefHeight="166.0" prefWidth="230.0" />
+   <HBox prefHeight="2.0" prefWidth="230.0">
+      <children>
+         <Button fx:id="buttonDelete" alignment="TOP_CENTER" onAction="#clearButton" prefHeight="26.0" prefWidth="55.0" style="-fx-background-color: orange;" text="C" />
+         <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button fx:id="buttonReturn" alignment="TOP_CENTER" onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="50.0" style="-fx-background-color: orange;" text="&lt;--" />
+      </children>
+   </HBox>
+   <HBox prefHeight="2.0" prefWidth="230.0">
+      <children>
+         <Button fx:id="button7" alignment="TOP_CENTER" onAction="#clickButton7" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: grey;" text="7" />
+         <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button fx:id="button8" alignment="TOP_CENTER" onAction="#clickButton8" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: grey;" text="8" />
+         <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button fx:id="button9" alignment="TOP_CENTER" onAction="#clickButton9" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: grey;" text="9" />
+         <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button fx:id="buttonDivide" alignment="TOP_CENTER" onAction="#divideOperator" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: ORANGE;" text="/" />
+      </children>
+   </HBox>
+   <HBox prefHeight="2.0" prefWidth="230.0">
+      <children>
+         <Button fx:id="button4" alignment="TOP_CENTER" onAction="#clickButton4" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: grey;" text="4" />
+         <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button fx:id="button5" alignment="TOP_CENTER" onAction="#clickButton5" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: grey;" text="5" />
+         <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button fx:id="button6" alignment="TOP_CENTER" onAction="#clickButton6" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: grey;" text="6" />
+         <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button fx:id="buttonMulti" alignment="TOP_CENTER" onAction="#multiOperator" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: ORANGE;" text="x" />
+      </children>
+   </HBox>
+   <HBox prefHeight="2.0" prefWidth="230.0">
+      <children>
+         <Button fx:id="button1" alignment="TOP_CENTER" onAction="#clickButton1" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: grey;" text="1" />
+         <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button fx:id="button2" alignment="TOP_CENTER" onAction="#clickButton2" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: grey;" text="2" />
+         <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button fx:id="button3" alignment="TOP_CENTER" onAction="#clickButton3" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: grey;" text="3" />
+         <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button fx:id="buttonMinus" alignment="TOP_CENTER" onAction="#minusOperator" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: ORANGE;" text="-" />
+      </children>
+   </HBox>
+   <HBox prefHeight="2.0" prefWidth="230.0">
+      <children>
+         <Button fx:id="buttonSeparator" alignment="TOP_CENTER" onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: grey;" text="," />
+         <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button fx:id="button0" alignment="TOP_CENTER" onAction="#clickButton0" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: grey;" text="0" />
+         <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button fx:id="buttonPoint" alignment="TOP_CENTER" onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: grey;" text="." />
+         <Separator orientation="VERTICAL" prefHeight="26.0" prefWidth="0.0" />
+         <Button fx:id="buttonPlus" alignment="TOP_CENTER" onAction="#plusOperator" prefHeight="26.0" prefWidth="60.0" style="-fx-background-color: ORANGE;" text="+" />
+      </children>
+   </HBox>
+   <HBox prefHeight="2.0" prefWidth="230.0">
+      <children>
+         <Button fx:id="buttonEquals" alignment="TOP_CENTER" onAction="#equals" prefHeight="26.0" prefWidth="53.0" style="-fx-background-color: orange;" text="=" />
+      </children>
+   </HBox>
+</VBox>
