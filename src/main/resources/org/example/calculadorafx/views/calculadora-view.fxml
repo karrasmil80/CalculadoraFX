@@ -13,7 +13,7 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <HBox prefHeight="0.0" prefWidth="230.0" />
-   <Label fx:id="welcomeText" />
+   <Label fx:id="welcomeText" text="Bienvenido a la aplicacion de la calculadora!" />
    <HBox prefHeight="2.0" prefWidth="230.0" />
    <TextField fx:id="input" prefHeight="166.0" prefWidth="230.0" />
    <HBox prefHeight="2.0" prefWidth="230.0">
