@@ -227,6 +227,12 @@ class CalculadoraController {
             "*" -> input.text = (a * b).toString()
             "/" -> input.text = (a / b).toString()
         }
-
     }
+
+    /*
+    @FXML
+    private fun separator() {
+        input.text = ","
+    }
+     */
 }
